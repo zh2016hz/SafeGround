@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhouhao="http://schemas.android.com/apk/res/com.gogoing.www.safeground"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gogoing.www.safeground.SettingActivity">
+    <TextView
+        style="@style/TitleStyle"
+        android:text="设置中心" />
+
+    <com.gogoing.www.safeground.view.Setting_item
+        android:id="@+id/autorefresh"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        zhouhao:Text_define="自动更新设置"
+        zhouhao:Chext_define="true"
+        zhouhao:Choise_define="top"
+        >
+    </com.gogoing.www.safeground.view.Setting_item>
+    <com.gogoing.www.safeground.view.Setting_item
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        zhouhao:Text_define="骚扰拦截设置"
+        android:id="@+id/stopin"
+        zhouhao:Chext_define="true"
+        zhouhao:Choise_define="botton"
+        >
+    </com.gogoing.www.safeground.view.Setting_item>
+    <com.gogoing.www.safeground.view.Setting_item
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locatinonshow"
+        zhouhao:Text_define="归属地显示设置"
+        zhouhao:Chext_define="true"
+        zhouhao:Choise_define="top"
+        >
+    </com.gogoing.www.safeground.view.Setting_item>
+    <com.gogoing.www.safeground.view.Setting_item
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        zhouhao:Text_define="归属地风格设置"
+        android:id="@+id/loactionstylesetting"
+        zhouhao:Chext_define="false"
+        zhouhao:Choise_define="botton"
+        >
+    </com.gogoing.www.safeground.view.Setting_item>
+</LinearLayout>

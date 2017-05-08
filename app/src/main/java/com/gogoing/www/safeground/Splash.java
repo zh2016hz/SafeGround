@@ -193,10 +193,9 @@ public class Splash extends AppCompatActivity {
 
         TextView versionname = (TextView) findViewById(R.id.splash_version_name);
         versionname.setText(getResources().getString(R.string.version_name) + PkgUtils.getVersionName(this));
-        checkVersion();
+//        checkVersion();
 
-
-    }
+        loadMainActivity();}
 
     private void checkVersion() {
 //http://127.0.0.1:8080/news/version.json

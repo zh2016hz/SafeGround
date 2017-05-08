@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingBar">
+
+        <attr name="Text_define" format="reference|string" />
+        <attr name="Chext_define" format="boolean"/>
+        <attr name="Choise_define">
+            <enum name="top" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="botton" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
