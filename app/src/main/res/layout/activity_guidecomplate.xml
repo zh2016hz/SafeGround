@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_phone_safe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.gogoing.www.safeground.avtivity.PhoneSafeActivity">
+
+    <TextView
+        android:text="手机防盗"
+        style="@style/TitleStyle"/>
+    <RelativeLayout
+        android:id="@+id/safephone"
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:text="点击激活/取消设备管理员"
+            android:layout_height="wrap_content" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phonenum"
+            android:text="33"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        ></View>
+    <RelativeLayout
+        android:id="@+id/active"
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:text="点击激活/取消设备管理员"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="30dp"
+            android:id="@+id/active_icon"
+            android:src="@drawable/admin_activated"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        ></View>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/retry"
+        android:text="重新进入设置界面"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        />
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#9a9"
+        android:text="功能介绍"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent" >
+        <TextView
+            style="@style/GuidesamlltextStyle"
+            android:text="GPS追踪#。。。。"/>
+        <TextView
+            style="@style/GuidesamlltextStyle" 
+            android:text="远程数据销毁"/>
+        <TextView
+            style="@style/GuidesamlltextStyle"
+            android:text="播放报警音乐#。。。。"/>
+        <TextView
+            style="@style/GuidesamlltextStyle"
+            android:text="远程锁屏#。。。。"/>
+
+    </LinearLayout>
+    <!-- <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="上一步"
+         android:layout_gravity="bottom|left"
+         android:drawableLeft="@drawable/pre"
+         android:background="@drawable/next_background"/>-->
+
+</LinearLayout>

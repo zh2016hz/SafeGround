@@ -28,12 +28,16 @@ public class GuideActivity5 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(GuideActivity5.this,GuideActivity5.class));
+                overridePendingTransition(R.anim.next_in,R.anim.next_in2);
             }
         });
         pre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GuideActivity5.this,GuideActivity3.class));
+                Intent intent = new Intent(GuideActivity5.this,GuidecomplateActivity.class);
+
+                startActivity(intent);
+                overridePendingTransition(R.anim.pre_in,R.anim.pre_in1);
             }
         });
 

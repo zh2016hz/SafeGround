@@ -20,6 +20,7 @@ public class PhoneSafeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(PhoneSafeActivity.this, GuideActivity2.class));
+                overridePendingTransition(R.anim.next_in,R.anim.next_in2);
             }
         });
     }

@@ -25,12 +25,14 @@ public class GuideActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(GuideActivity3.this,GuideActivity4.class));
+                overridePendingTransition(R.anim.next_in,R.anim.next_in2);
             }
         });
         pre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(GuideActivity3.this,GuideActivity2.class));
+                overridePendingTransition(R.anim.pre_in,R.anim.pre_in1);
             }
         });
         num.setOnClickListener(new View.OnClickListener() {

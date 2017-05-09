@@ -12,8 +12,9 @@ import android.widget.RelativeLayout;
 import com.gogoing.www.safeground.Utils.Constant;
 import com.gogoing.www.safeground.Utils.SharePrefrenceUtil;
 import com.gogoing.www.safeground.avtivity.PhoneSafeActivity;
+import com.gogoing.www.safeground.view.GuideBaseAvtivity;
 
-public class GuideActivity2 extends AppCompatActivity {
+public class GuideActivity2 extends GuideBaseAvtivity {
 
     private ImageView lock;
 
@@ -32,12 +33,14 @@ public class GuideActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(GuideActivity2.this,GuideActivity3.class));
+                overridePendingTransition(R.anim.next_in,R.anim.next_in2);
             }
         });
         pre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(GuideActivity2.this,PhoneSafeActivity.class));
+                overridePendingTransition(R.anim.pre_in,R.anim.pre_in1);
             }
         });
         bind.setOnClickListener(new View.OnClickListener() {
@@ -49,5 +52,11 @@ public class GuideActivity2 extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public Boolean isfisrt() {
+        //跳转
+        return true;
     }
 }
