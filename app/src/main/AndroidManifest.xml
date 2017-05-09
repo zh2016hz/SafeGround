@@ -23,7 +23,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".SettingActivity" />
-        <activity android:name=".avtivity.PhoneSafeActivity"></activity>
+        <activity android:name=".avtivity.PhoneSafeActivity" />
+        <activity android:name=".GuideActivity2" />
+        <activity android:name=".GuideActivity3" />
+        <activity android:name=".GuideActivity4" />
+        <activity android:name=".GuideActivity5"></activity>
     </application>
 
 </manifest>

@@ -9,28 +9,15 @@
     tools:context="com.gogoing.www.safeground.avtivity.PhoneSafeActivity">
 
     <TextView
-        android:text="1.欢迎使用手机防盗"
+        android:text="5.恭喜你，设置完成"
         style="@style/TitleStyle"/>
-    <TextView
-      style="@style/GuidebigtextStyle"
-        android:text="你的手机防盗卫士"
-        />
-    <TextView
-       style="@style/GuidesamlltextStyle"
-        android:text="SIM卡变更报警器"
-        />
-    <TextView
-        style="@style/GuidesamlltextStyle"
-        android:text="GPS追踪"
-        />
-    <TextView
-        style="@style/GuidesamlltextStyle"
-        android:text="远程锁屏"
-        />
-    <TextView
-        style="@style/GuidesamlltextStyle"
-        android:text="远程销毁数据"
-        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选中开启防盗功能"
+        android:id="@+id/chect5"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
@@ -39,13 +26,18 @@
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/step_1" />
+            android:src="@drawable/step_5" />
 
         <Button
 
             style="@style/GuidenextStyle"
-           android:id="@+id/next1"
-            android:text="下一步" />
+            android:id="@+id/next5"
+            android:text="设置完成" />
+        <Button
+
+            style="@style/GuidepreStyle"
+            android:id="@+id/pre5"
+            android:text="上一步" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -55,42 +47,44 @@
             android:layout_marginBottom="10dp"
             android:orientation="horizontal" >
 
+
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selecte_icon_normal" />
+
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selecte_icon_normal" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selecte_icon_normal" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selecte_icon_normal" />
             <View
                 android:layout_width="5dp"
                 android:layout_height="5dp"
                 android:background="@drawable/selecte_icon_selected" />
-
-            <View
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/selecte_icon_normal" />
-
-            <View
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/selecte_icon_normal" />
-
-            <View
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/selecte_icon_normal" />
-
-            <View
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/selecte_icon_normal" />
-   </LinearLayout>
+        </LinearLayout>
     </RelativeLayout>
-   <!-- <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="上一步"
-        android:layout_gravity="bottom|left"
-        android:drawableLeft="@drawable/pre"
-        android:background="@drawable/next_background"/>-->
+    <!-- <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="上一步"
+         android:layout_gravity="bottom|left"
+         android:drawableLeft="@drawable/pre"
+         android:background="@drawable/next_background"/>-->
 
 </LinearLayout>

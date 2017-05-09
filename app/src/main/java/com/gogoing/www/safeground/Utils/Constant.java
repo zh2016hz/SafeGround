@@ -8,4 +8,6 @@ public interface Constant {
     String  Shareprefrence = "SHAREPREFRENCE";
     String  AUTOUPDATE = "autoupdate";
     String  PHONESAFEPWD = "safePhonepwd";
+    String  LUCKORUNLORCK = "lockSIM";
+    String  ACTIVESTATU = "activestatus";
 }
